@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow & Text-shadow</title>
+    <style>
+        .container{
+           display: flex;
+        }
+        .card{
+            /* border: 2px solid red; */
+            background-color: aquamarine;
+            padding: 30px;
+            margin: 23px 13px;
+
+            /* Giving shadow to a box  */
+            /* we write 10px bcz wanna add radius(bluresness) */
+            box-shadow: 6px 5px 10px black;
+             }
+             .card h2{
+                /* text shadow is use for giving the shade to the text  */
+                text-shadow: 3px 2px white;
+             }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perspiciatis quaerat ut possimus
+                quidem cumque porro ipsam doloremque atque molestias assumenda harum nam voluptates, nisi ipsa et
+                maxime, tempora recusandae.</p>
+        </div>
+        <div class="card">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perspiciatis quaerat ut possimus
+                quidem cumque porro ipsam doloremque atque molestias assumenda harum nam voluptates, nisi ipsa et
+                maxime, tempora recusandae.</p>
+        </div>
+        <div class="card">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perspiciatis quaerat ut possimus
+                quidem cumque porro ipsam doloremque atque molestias assumenda harum nam voluptates, nisi ipsa et
+                maxime, tempora recusandae.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
