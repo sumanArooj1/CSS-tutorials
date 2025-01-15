@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            background-color: #090909;
+            color: white;
+        }
+
+        #box {
+            display: flex;
+            /* margin: auto; */
+            color: white;
+            border: 2px solid rgb(211, 238, 8);
+            border-radius: 40px;
+            width: 160px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+            transition-duration: 2s;
+        }
+
+        #box:hover {
+            background-color: white;
+            color: black;
+            height: 65px;
+            width: 165px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is Transition funtion.</h1>
+    <div class="container">
+        <div id="box">
+            This is a Box
+        </div>
+    </div>
+
+</body>
+
+</html>
