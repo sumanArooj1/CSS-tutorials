@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 80vh;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            border: 3px solid black;
+            border-radius: 9px;
+            width: 400px;
+            height: 400px;
+            transition: all 1s;
+        }
+
+        .box:hover {
+            /* For rotation */
+            transform: rotate(45deg);
+
+            /* For zooming like effect
+            transform: scale(1.5); */
+
+            /* For skew shape
+            transform: skew(40deg); */
+
+            /* moving the box 
+            transform: translate(123px, 123px); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a BOX
+        </div>
+    </div>
+
+</body>
+
+</html>
