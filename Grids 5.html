@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> layout grids</title>
+    <style>
+
+.container{
+display: grid;
+grid-gap: 1rem;
+grid-template-areas: 
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+}
+.item{
+    border: 3px solid black;
+    background-color: rgb(96, 211, 173);
+    padding: 12px;
+}
+#navbar{
+    grid-area:navbar ;
+}
+#section{
+    grid-area:section ;
+}
+#aside{
+    grid-area:aside ;
+}
+footer{
+    grid-area:footer ;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="navbar" class="item">Home Services About us</div>
+    <div id="section" class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem suscipit pariatur molestias soluta, earum voluptas eveniet ab rem sequi maxime! Perferendis sed vero nihil quasi quae excepturi reiciendis adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque sit ad vitae dolorum delectus veniam nisi odit repudiandae ea aliquam libero accusamus quos aspernatur dicta natus, voluptatum, est quia quam quod, ipsum culpa quis reprehenderit illum? Enim consequatur odit nostrum eveniet sequi, adipisci praesentium nam nemo vel iure alias nulla exercitationem assumenda ipsum cupiditate quia voluptates eligendi repudiandae commodi ullam. Molestiae rem autem, doloribus quas reiciendis numquam non, provident quisquam recusandae dolor, natus accusantium et id rerum tempore quo nostrum est dolorem reprehenderit quos optio! Dolorum illum dolor dolore ipsa incidunt quidem cumque deleniti assumenda. Ut recusandae illo eligendi!</div>
+    <div id="aside" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda laborum perferendis! Nemo nesciunt atque vero facilis odit placeat architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iste aspernatur fugit expedita officiis possimus magnam molestiae explicabo praesentium, ex optio architecto. Blanditiis architecto nam temporibus nemo quos vitae soluta vel, cumque quia numquam optio neque voluptatibus deserunt labore, laudantium excepturi dolore fuga alias eligendi nulla, mollitia quas quaerat? Culpa.</div>
+</div>
+
+    <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quidem?</footer>
+
+    
+</body>
+</html>
