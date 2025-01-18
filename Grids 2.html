@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grids</title>
+    <style>
+.container{
+display: grid;
+grid-template-rows: 1fr 3fr 2fr;
+
+/* when you define the values like: above the starting 3 items will get those values and all other will get 1fr automatically, so is you want to give saperetly value to those item define them--> like grid-auto:  
+grid-auto-rows: 2fr;*/
+
+grid-template-columns: 1fr 4fr  2fr;
+  
+/* want to give equal gap between all the boxs */
+grid-gap:1rem 
+
+}
+.item{
+border: 2px solid black;
+background-color: rgb(155, 136, 172);
+margin: 3px;
+padding: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is a box-1</div>
+        <div class="item">This is a box-2</div>
+        <div class="item">This is a box-3</div>
+        <div class="item">This is a box-4</div>
+        <div class="item">This is a box-5</div>
+        <div class="item">This is a box-6</div>
+        <div class="item">This is a box-7</div>
+        <div class="item">This is a box-8</div>
+        <div class="item">This is a box-9</div>
+        <div class="item">This is a box-10</div>
+        <div class="item">This is a box-11</div>
+        <div class="item">This is a box-12</div>
+        <div class="item">This is a box-13</div>
+        <div class="item">This is a box-14</div>
+        <div class="item">This is a box-15</div>
+        <div class="item">This is a box-16</div>
+        <div class="item">This is a box-17</div>
+        <div class="item">This is a box-18</div>
+        <div class="item">This is a box-19</div>
+        <div class="item">This is a box-20</div>
+    </div>
+    
+</body>
+</html>
